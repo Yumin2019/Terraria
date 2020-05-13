@@ -18,15 +18,15 @@ public:
 
 private:
 	map<wstring, CAnimation2D*>	m_mapAnim; 
-	// Animator´Â ¿©·¯°³ÀÇ ¾Ö´Ï¸ÞÀÌ¼ÇÀ» µé°í ÀÖ°í,
-	// ¾Ö´Ï¸ÞÀÌ¼ÇÀº ¿©·¯°³ÀÇ ÇÁ·¹ÀÓ Á¤º¸¸¦ °¡Áö°í ÀÖ´Â´Ù.
-	// ¾Ö´Ï¸ÞÀÌ¼Ç °´Ã¼¿¡¼­ ¿©·¯ ClipÀ» °ü¸®ÇÏ´Â °ÍÀÌ ¾Æ´Ñ, °¢ Å¬¸³ ÀÚÃ¼°¡ ¾Ö´Ï¸ÞÀÌ¼Ç °´Ã¼ ÇÏ³ª·Î °ü¸®µÇ´Â °É·Î »ý°¢ÇÑ´Ù.
+	// AnimatorëŠ” ì—¬ëŸ¬ê°œì˜ ì• ë‹ˆë©”ì´ì…˜ì„ ë“¤ê³  ìžˆê³ ,
+	// ì• ë‹ˆë©”ì´ì…˜ì€ ì—¬ëŸ¬ê°œì˜ í”„ë ˆìž„ ì •ë³´ë¥¼ ê°€ì§€ê³  ìžˆëŠ”ë‹¤.
+	// ì• ë‹ˆë©”ì´ì…˜ ê°ì²´ì—ì„œ ì—¬ëŸ¬ Clipì„ ê´€ë¦¬í•˜ëŠ” ê²ƒì´ ì•„ë‹Œ, ê° í´ë¦½ ìžì²´ê°€ ì• ë‹ˆë©”ì´ì…˜ ê°ì²´ í•˜ë‚˜ë¡œ ê´€ë¦¬ë˜ëŠ” ê±¸ë¡œ ìƒê°í•œë‹¤.
 
-	CAnimation2D*				m_pCurAnim; // ¸Â±¸¸¶À×, ¼º¿ì½ÜÀº ÀÌ°É m_pCurClipÀ¸·Î ÀÌ¸§ÁöÀ¸¼ÌÁö.
-	wstring						m_strDefaultAni; // ±âº» ¾Ö´Ï¸ÞÀÌ¼ÇÀ» ¼³Á¤ÇØÁØ´Ù. ONCE_RETURN ¿É¼Ç¿¡¼­ »ç¿ë
+	CAnimation2D*					m_pCurAnim; 
+	wstring						m_strDefaultAni; // ê¸°ë³¸ ì• ë‹ˆë©”ì´ì…˜ì„ ì„¤ì •í•´ì¤€ë‹¤. ONCE_RETURN ì˜µì…˜ì—ì„œ ì‚¬ìš©
 
-	bool						m_bPause; // ¾Ö´Ï¸ÞÀÌ¼ÇÀÇ Á¤Áö ¿©ºÎÀÌ´Ù.
-										  // ÀÌ °ªÀÌ ÄÑÁ® ÀÖ´Â °æ¿ì¿¡´Â ¾Ö´Ï¸ÞÀÌ¼Ç¿¡ ´ëÇÑ Ã³¸®¸¦ ÇÏÁö ¾Ê´Â´Ù.
+	bool						m_bPause; // ì• ë‹ˆë©”ì´ì…˜ì˜ ì •ì§€ ì—¬ë¶€ì´ë‹¤.
+										  // ì´ ê°’ì´ ì¼œì ¸ ìžˆëŠ” ê²½ìš°ì—ëŠ” ì• ë‹ˆë©”ì´ì…˜ì— ëŒ€í•œ ì²˜ë¦¬ë¥¼ í•˜ì§€ ì•ŠëŠ”ë‹¤.
 
 public:
 	void SetDefaultAni(const wstring& strName) { m_strDefaultAni = strName; }
@@ -46,15 +46,15 @@ public:
 		int iFrameCount, float fDuration = 1.f, ANIMATION_OPTION eOption = ANIMATION_OPTION::AO_LOOP, bool bHorizon = false);
 
 	void PlayDefaultAnim() { PlayAnimation(m_strDefaultAni); }
-	// ÆíÁýµÈ ÀÌ¹ÌÁö, °¡·Î·Î ÀÌ¾îÁø ÀÌ¹ÌÁö¸¦ LeftTop°ú Length¸¦ ±âÁØÀ¸·Î ÇÑ ÇÁ·¹ÀÓ¾¿ µû¼­, ¾Ö´Ï¸ÞÀÌ¼ÇÀ» ¸¸µé¾îÁÖ´Â
-	// ÇÔ¼öÀÌ´Ù. 
+	// íŽ¸ì§‘ëœ ì´ë¯¸ì§€, ê°€ë¡œë¡œ ì´ì–´ì§„ ì´ë¯¸ì§€ë¥¼ LeftTopê³¼ Lengthë¥¼ ê¸°ì¤€ìœ¼ë¡œ í•œ í”„ë ˆìž„ì”© ë”°ì„œ, ì• ë‹ˆë©”ì´ì…˜ì„ ë§Œë“¤ì–´ì£¼ëŠ”
+	// í•¨ìˆ˜ì´ë‹¤. 
 
-	void PlayAnimation(const wstring& strAnimKey); // ¾Ö´Ï¸ÞÀÌ¼Ç È£Ãâ
+	void PlayAnimation(const wstring& strAnimKey); // ì• ë‹ˆë©”ì´ì…˜ í˜¸ì¶œ
 	CAnimation2D* FindAnimation(const wstring& strKey); 
-	void UpdateData(); // ¾Ö´Ï¸ÞÀÌ¼Ç¿¡¼­ »ç¿ëÇÒ µ¥ÀÌÅÍ¸¦ ³Ñ±â´Â ÇÔ¼ö·Î UVÁÂÇ¥¸¦ Åä´ë·Î ÇÁ·¹ÀÓÀÇ Á¤º¸¸¦ ³Ñ±â´Âµ¥ »ç¿ëµÈ´Ù.
-	static void ClearData(); // À§¿¡¼­ »ç¿ëÇÑ Á¤º¸¸¦ ClearÇÏ´Âµ¥ ÀÌ¿ë.
+	void UpdateData(); // ì• ë‹ˆë©”ì´ì…˜ì—ì„œ ì‚¬ìš©í•  ë°ì´í„°ë¥¼ ë„˜ê¸°ëŠ” í•¨ìˆ˜ë¡œ UVì¢Œí‘œë¥¼ í† ëŒ€ë¡œ í”„ë ˆìž„ì˜ ì •ë³´ë¥¼ ë„˜ê¸°ëŠ”ë° ì‚¬ìš©ëœë‹¤.
+	static void ClearData(); // ìœ„ì—ì„œ ì‚¬ìš©í•œ ì •ë³´ë¥¼ Clearí•˜ëŠ”ë° ì´ìš©.
 
-	void StopAnimation(); // ÃÊ±â»óÅÂ & stop
+	void StopAnimation(); // ì´ˆê¸°ìƒíƒœ & stop
 
 	virtual bool SaveToScene(FILE* pFile);
 	virtual bool LoadFromScene(FILE* pFile);
