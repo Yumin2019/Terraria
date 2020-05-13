@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\01. App">
+      <UniqueIdentifier>{7c6f7220-7dfb-4f7a-9eda-de774c7d3d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. MainFrame">
+      <UniqueIdentifier>{a43ae8ce-1055-45ae-9bcb-a42776cfdfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. View">
+      <UniqueIdentifier>{8ee68a72-ddd9-45b3-b11c-56c7c012117c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{7182eabf-fc1c-4113-9b5a-d5253005163b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. View\BtnView">
+      <UniqueIdentifier>{49438821-26f2-4dcd-86a9-fa4db8fc570e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. View\GameView">
+      <UniqueIdentifier>{9beb4ef1-b6fb-418e-85ac-f1295eb74fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. View\HierachyView">
+      <UniqueIdentifier>{a193d364-5933-4c6a-abd1-e583ae649334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. View\InfoView">
+      <UniqueIdentifier>{54880169-f1cf-4e24-94ab-a2104b0dfa3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog">
+      <UniqueIdentifier>{27916b5a-7889-4455-a2fe-db4c7e4b64e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg">
+      <UniqueIdentifier>{3d074535-6239-4e84-9f54-83731d5318f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\MeshRender">
+      <UniqueIdentifier>{0fa9e43b-cf19-4615-80fc-7b87659d21c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Transform">
+      <UniqueIdentifier>{0909d5fc-1dc7-443a-a185-98cc85deea26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\PopUpDlg">
+      <UniqueIdentifier>{76df8001-92eb-4ca1-8b56-264283133de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Camera">
+      <UniqueIdentifier>{37bec844-8586-400d-b17f-7edc95273a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Light">
+      <UniqueIdentifier>{277e2aae-e0c0-4011-ad09-b648e67ae03e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. View\DbgView">
+      <UniqueIdentifier>{d75c217a-9d8e-4a3a-a5d6-6e343b5dcd58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Animator2D">
+      <UniqueIdentifier>{041e5684-bb44-4cb6-8e8b-4a55f47814ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05. Tool Script">
+      <UniqueIdentifier>{88505ada-952d-4917-9aef-d44db859fd14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\HierachyDlg">
+      <UniqueIdentifier>{3ec519bf-d271-4bce-bdfd-0985c003c5d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager">
+      <UniqueIdentifier>{433badf7-0983-4dff-baae-a0fb8d619c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Other">
+      <UniqueIdentifier>{5ec222cf-fe67-4e00-b5f0-75f383ccedfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ButtonDlg">
+      <UniqueIdentifier>{45043171-1a0e-4b4f-9f19-39924b40ed8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ListDlg">
+      <UniqueIdentifier>{ea703f47-7e66-49f8-ba80-783812f3f711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\PopUpDlg\LayerCheck">
+      <UniqueIdentifier>{bb50e4fb-3517-492b-a805-a8b390855904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\PopUpDlg\TileDlg">
+      <UniqueIdentifier>{43f6b8c9-38ea-4f7f-8b21-9174cc23ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Other\LayerDlg">
+      <UniqueIdentifier>{c17bfd92-e7bd-4f48-853e-09a5d30a2504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent">
+      <UniqueIdentifier>{81324fcd-e626-4c75-b024-9fc14a4b7efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent\AddAnimationDlg">
+      <UniqueIdentifier>{1aa4d35a-7c10-4b90-a416-cc783670d8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent\MtrlDataDlg">
+      <UniqueIdentifier>{1a36d8e1-246e-4909-8c36-b5ce45e59515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Script">
+      <UniqueIdentifier>{82aedb1d-90c4-43bf-9691-107435b0e8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Dialog\ComponentDlg\Collider2D">
+      <UniqueIdentifier>{0e9a9dd6-c3c9-4d04-b3bd-564c7661d44c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tool.h">
+      <Filter>소스 파일\01. App</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameView.h">
+      <Filter>소스 파일\03. View\GameView</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonView.h">
+      <Filter>소스 파일\03. View\BtnView</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugView.h">
+      <Filter>소스 파일\03. View\DbgView</Filter>
+    </ClInclude>
+    <ClInclude Include="HierachyView.h">
+      <Filter>소스 파일\03. View\HierachyView</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoView.h">
+      <Filter>소스 파일\03. View\InfoView</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>소스 파일\02. MainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRenderDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\MeshRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2DDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Collider2D</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Light2DDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectorDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerCheckDlg.h">
+      <Filter>소스 파일\04. Dialog\PopUpDlg\LayerCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\LayerDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="TileDlg.h">
+      <Filter>소스 파일\04. Dialog\PopUpDlg\TileDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator2DDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Animator2D</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCamScript.h">
+      <Filter>소스 파일\05. Tool Script</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeCtrlDlg.h">
+      <Filter>소스 파일\04. Dialog\HierachyDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ResListDlg.h">
+      <Filter>소스 파일\04. Dialog\HierachyDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HierachyDlg.h">
+      <Filter>소스 파일\04. Dialog\HierachyDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MySplitterWnd.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PenMgr.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonDlg.h">
+      <Filter>소스 파일\04. Dialog\ButtonDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ListDlg.h">
+      <Filter>소스 파일\04. Dialog\ListDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="PopUpDlg.h">
+      <Filter>소스 파일\04. Dialog\PopUpDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MtrlDataDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent\MtrlDataDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AddAnimDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent\AddAnimationDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptDlg.h">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolEventMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tool.cpp">
+      <Filter>소스 파일\01. App</Filter>
+    </ClCompile>
+    <ClCompile Include="GameView.cpp">
+      <Filter>소스 파일\03. View\GameView</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonView.cpp">
+      <Filter>소스 파일\03. View\BtnView</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugView.cpp">
+      <Filter>소스 파일\03. View\DbgView</Filter>
+    </ClCompile>
+    <ClCompile Include="HierachyView.cpp">
+      <Filter>소스 파일\03. View\HierachyView</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoView.cpp">
+      <Filter>소스 파일\03. View\InfoView</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>소스 파일\02. MainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRenderDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\MeshRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider2DDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Collider2D</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Light2DDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectorDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerCheckDlg.cpp">
+      <Filter>소스 파일\04. Dialog\PopUpDlg\LayerCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\LayerDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="TileDlg.cpp">
+      <Filter>소스 파일\04. Dialog\PopUpDlg\TileDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator2DDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Animator2D</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCamScript.cpp">
+      <Filter>소스 파일\05. Tool Script</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeCtrlDlg.cpp">
+      <Filter>소스 파일\04. Dialog\HierachyDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ResListDlg.cpp">
+      <Filter>소스 파일\04. Dialog\HierachyDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HierachyDlg.cpp">
+      <Filter>소스 파일\04. Dialog\HierachyDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Header</Filter>
+    </ClCompile>
+    <ClCompile Include="MySplitterWnd.cpp">
+      <Filter>Header</Filter>
+    </ClCompile>
+    <ClCompile Include="PenMgr.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ButtonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ListDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ListDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="PopUpDlg.cpp">
+      <Filter>소스 파일\04. Dialog\PopUpDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MtrlDataDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent\MtrlDataDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAnimDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent\AddAnimationDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Other\POPUP Parent</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptDlg.cpp">
+      <Filter>소스 파일\04. Dialog\ComponentDlg\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolEventMgr.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tool.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Tool.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Tool.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

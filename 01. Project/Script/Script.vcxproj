@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6DF298F5-9F47-4507-9B79-5E440435EB60}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Script</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>04. Script</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)03. Extrinsic\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)03. Extrinsic\Library\;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)03. Extrinsic\Library\Script\</OutDir>
+    <TargetName>Script_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)03. Extrinsic\Library\Script\</OutDir>
+    <TargetName>Script</TargetName>
+    <IncludePath>$(SolutionDir)03. Extrinsic\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)03. Extrinsic\Library\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd $(SolutionDir)02. Result\Bin\
+call CodeGen.exe</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)
+call ScriptCopy.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd $(SolutionDir)
+call ScriptCopy.bat</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>cd $(SolutionDir)02. Result\Bin\
+call CodeGen.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ArmorPanelScript.h" />
+    <ClInclude Include="ArmorScript.h" />
+    <ClInclude Include="BackGroundScript.h" />
+    <ClInclude Include="DayScript.h" />
+    <ClInclude Include="EquipmentScript.h" />
+    <ClInclude Include="CraftingScript.h" />
+    <ClInclude Include="DirectionScript.h" />
+    <ClInclude Include="FlyawayScript.h" />
+    <ClInclude Include="FontObjScript.h" />
+    <ClInclude Include="GravityScript.h" />
+    <ClInclude Include="HeartUIScript.h" />
+    <ClInclude Include="InventoryScript.h" />
+    <ClInclude Include="ItemObjScript.h" />
+    <ClInclude Include="ItemScript.h" />
+    <ClInclude Include="JumpScript.h" />
+    <ClInclude Include="LogoScript.h" />
+    <ClInclude Include="MainCameraScript.h" />
+    <ClInclude Include="MonsterHPScript.h" />
+    <ClInclude Include="MonsterScript.h" />
+    <ClInclude Include="MouseScript.h" />
+    <ClInclude Include="PanelScript.h" />
+    <ClInclude Include="ParticleScript.h" />
+    <ClInclude Include="PlayerScript.h" />
+    <ClInclude Include="PoolMgr.h" />
+    <ClInclude Include="PrototypeMgr.h" />
+    <ClInclude Include="SaveLoadMgr.h" />
+    <ClInclude Include="ScaleScript.h" />
+    <ClInclude Include="ScriptMgr.h" />
+    <ClInclude Include="SelectScript.h" />
+    <ClInclude Include="ShiningScript.h" />
+    <ClInclude Include="SlimeScript.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="struct.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TileMapMgr.h" />
+    <ClInclude Include="ToggleScript.h" />
+    <ClInclude Include="UIItemScript.h" />
+    <ClInclude Include="UtilMgr.h" />
+    <ClInclude Include="ZombieScript.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArmorPanelScript.cpp" />
+    <ClCompile Include="ArmorScript.cpp" />
+    <ClCompile Include="BackGroundScript.cpp" />
+    <ClCompile Include="DayScript.cpp" />
+    <ClCompile Include="EquipmentScript.cpp" />
+    <ClCompile Include="CraftingScript.cpp" />
+    <ClCompile Include="DirectionScript.cpp" />
+    <ClCompile Include="FlyawayScript.cpp" />
+    <ClCompile Include="FontObjScript.cpp" />
+    <ClCompile Include="GravityScript.cpp" />
+    <ClCompile Include="HeartUIScript.cpp" />
+    <ClCompile Include="InventoryScript.cpp" />
+    <ClCompile Include="ItemObjScript.cpp" />
+    <ClCompile Include="ItemScript.cpp" />
+    <ClCompile Include="JumpScript.cpp" />
+    <ClCompile Include="LogoScript.cpp" />
+    <ClCompile Include="MainCameraScript.cpp" />
+    <ClCompile Include="MonsterHPScript.cpp" />
+    <ClCompile Include="MonsterScript.cpp" />
+    <ClCompile Include="MouseScript.cpp" />
+    <ClCompile Include="PanelScript.cpp" />
+    <ClCompile Include="ParticleScript.cpp" />
+    <ClCompile Include="PlayerScript.cpp" />
+    <ClCompile Include="PoolMgr.cpp" />
+    <ClCompile Include="PrototypeMgr.cpp" />
+    <ClCompile Include="SaveLoadMgr.cpp" />
+    <ClCompile Include="ScaleScript.cpp" />
+    <ClCompile Include="ScriptMgr.cpp" />
+    <ClCompile Include="SelectScript.cpp" />
+    <ClCompile Include="ShiningScript.cpp" />
+    <ClCompile Include="SlimeScript.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TileMapMgr.cpp" />
+    <ClCompile Include="ToggleScript.cpp" />
+    <ClCompile Include="UIItemScript.cpp" />
+    <ClCompile Include="UtilMgr.cpp" />
+    <ClCompile Include="ZombieScript.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

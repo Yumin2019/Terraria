@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default">
+      <UniqueIdentifier>{6bb0a9a6-9053-4b36-92a5-184cb1b9ea4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{37e1c404-48ff-41ea-9ddc-1aa780ddc6e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{0fc66126-c896-4114-90bc-5f345b165e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Direction Script">
+      <UniqueIdentifier>{8dd76cfe-9f33-46a4-9657-bfcbc3717863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Direction Script\Objects">
+      <UniqueIdentifier>{95ca0aed-8588-4240-b6ea-f280c65c1a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\UI">
+      <UniqueIdentifier>{0380b3fc-2ac4-48a0-b741-b130a7c6733c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Mobility">
+      <UniqueIdentifier>{9a0437d7-afd7-4b8e-9108-fe9fb61781d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Specials">
+      <UniqueIdentifier>{88acc1d6-c5f5-4d93-b3d5-856670eb99d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Items">
+      <UniqueIdentifier>{bbabacf6-3663-459d-881e-eff9f8d7007b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Direction Script\Objects\Monster">
+      <UniqueIdentifier>{eb84d64a-c44c-4b48-b112-32feafdfa54f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Particle">
+      <UniqueIdentifier>{4468f14c-af44-4291-8aee-32585c89df64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptMgr.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLoadMgr.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionScript.h">
+      <Filter>Script\Direction Script</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerScript.h">
+      <Filter>Script\Direction Script\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelScript.h">
+      <Filter>Script\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCameraScript.h" />
+    <ClInclude Include="MouseScript.h" />
+    <ClInclude Include="FlyawayScript.h">
+      <Filter>Script\Mobility</Filter>
+    </ClInclude>
+    <ClInclude Include="GravityScript.h">
+      <Filter>Script\Mobility</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpScript.h">
+      <Filter>Script\Mobility</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiningScript.h">
+      <Filter>Script\Specials</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleScript.h">
+      <Filter>Script\Specials</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGroundScript.h">
+      <Filter>Script\Specials</Filter>
+    </ClInclude>
+    <ClInclude Include="PrototypeMgr.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemObjScript.h">
+      <Filter>Script\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="UIItemScript.h">
+      <Filter>Script\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemScript.h">
+      <Filter>Script\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="ToggleScript.h" />
+    <ClInclude Include="CraftingScript.h">
+      <Filter>Script\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectScript.h" />
+    <ClInclude Include="TileMapMgr.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentScript.h">
+      <Filter>Script\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmorScript.h">
+      <Filter>Script\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterScript.h">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="ZombieScript.h">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeScript.h">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmorPanelScript.h" />
+    <ClInclude Include="PoolMgr.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleScript.h">
+      <Filter>Script\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilMgr.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="FontObjScript.h" />
+    <ClInclude Include="HeartUIScript.h">
+      <Filter>Script\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DayScript.h">
+      <Filter>Script\Specials</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoScript.h">
+      <Filter>Script\Specials</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterHPScript.h">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptMgr.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLoadMgr.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionScript.cpp">
+      <Filter>Script\Direction Script</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerScript.cpp">
+      <Filter>Script\Direction Script\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelScript.cpp">
+      <Filter>Script\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCameraScript.cpp" />
+    <ClCompile Include="MouseScript.cpp" />
+    <ClCompile Include="FlyawayScript.cpp">
+      <Filter>Script\Mobility</Filter>
+    </ClCompile>
+    <ClCompile Include="GravityScript.cpp">
+      <Filter>Script\Mobility</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpScript.cpp">
+      <Filter>Script\Mobility</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleScript.cpp">
+      <Filter>Script\Specials</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiningScript.cpp">
+      <Filter>Script\Specials</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGroundScript.cpp">
+      <Filter>Script\Specials</Filter>
+    </ClCompile>
+    <ClCompile Include="PrototypeMgr.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemObjScript.cpp">
+      <Filter>Script\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="UIItemScript.cpp">
+      <Filter>Script\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemScript.cpp">
+      <Filter>Script\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="ToggleScript.cpp" />
+    <ClCompile Include="CraftingScript.cpp">
+      <Filter>Script\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectScript.cpp" />
+    <ClCompile Include="TileMapMgr.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentScript.cpp">
+      <Filter>Script\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmorScript.cpp">
+      <Filter>Script\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterScript.cpp">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="ZombieScript.cpp">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeScript.cpp">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmorPanelScript.cpp" />
+    <ClCompile Include="PoolMgr.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleScript.cpp">
+      <Filter>Script\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilMgr.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="FontObjScript.cpp" />
+    <ClCompile Include="HeartUIScript.cpp">
+      <Filter>Script\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="DayScript.cpp">
+      <Filter>Script\Specials</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoScript.cpp">
+      <Filter>Script\Specials</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterHPScript.cpp">
+      <Filter>Script\Direction Script\Objects\Monster</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

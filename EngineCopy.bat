@@ -1,0 +1,2 @@
+xcopy /s /y /d /exclude:exclude_list.txt ".\01. Project\Engine\*.h" ".\03. Extrinsic\Include\Engine"
+xcopy /s /y /d /exclude:exclude_list.txt ".\01. Project\Engine\*.fx" ".\02. Result\Bin\content\Shader"

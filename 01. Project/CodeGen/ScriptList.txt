@@ -1,0 +1,15 @@
+BackGroundScript
+FlyawayScript
+GravityScript
+InventoryScript
+ItemObjScript
+ItemScript
+JumpScript
+MainCameraScript
+MouseScript
+PanelScript
+PlayerScript
+ScaleScript
+ShiningScript
+UIItemScript
+ZombieScript
