@@ -1,58 +1,27 @@
 # Terraria
+This is my terrria clone project with C++, DirectX 11(using MFC Engine)
 
- 
- 
-  
-   장르
-  : 액션, 횡스크롤, 어드벤처
+Genre: Action, Adventure
 
+Work Time: 2019.12.3 ~ 2021.3.1 (4 months)
 
-  
-   비고 :
-  테라리아
-  모작
+IDE: Visual Studio 2017
+
+Blog: https://blog.naver.com/lmj3322/221934935019
 
 
-  
- 
- 
-  
-  개발
-  기간 : 2019년
-  12월
-  ~ 3월(4개월)
+# Intro 
+https://user-images.githubusercontent.com/49779139/143723267-abf4129b-3fd6-4920-ac71-00144678d16d.mp4
 
 
-  
-  개발
-  인원 : 1명
+# Digging
+https://user-images.githubusercontent.com/49779139/143723460-28f48d05-f5a9-4cb1-8b45-7776413d1f9e.mp4
 
 
-  
-  개발
-  환경 : Visual Studio 2017
+# Combination
+https://user-images.githubusercontent.com/49779139/143723462-31ecff1d-7828-4c38-a39c-285c69804ca0.mp4
 
 
-  
-  사용
-  기술 : C++, DirectX 11, MFC, FMOD
-
-
-  
- 
- 
- 
- 
-  
-  유튜브
-  : X
-
-
-  
-  블로그
-  : https://blog.naver.com/lmj3322/221934935019
-
-
-  
- 
+# PointLight 2D
+https://user-images.githubusercontent.com/49779139/143723476-1e43369d-6528-4faa-959c-092c7c4dbd17.mp4
 
