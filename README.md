@@ -1,8 +1,12 @@
 # Terraria
 This is my terrria clone project with C++, DirectX 11(using MFC Engine)
+
 Genre: Action, Adventure
+
 Work Time: 2019.12.3 ~ 2021.3.1 (4 months)
+
 IDE: Visual Studio 2017
+
 Blog: https://blog.naver.com/lmj3322/221934935019
 
 
